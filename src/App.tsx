@@ -10,7 +10,7 @@ function App() {
     const [page, setPage] = useState(navItems[0]);
 
     return (
-        <div className="container-fluid">
+        <div className={'mx-2'}>
             <StarWarsContext value={
                 {page, changePage: setPage, }
             }>

@@ -2,7 +2,7 @@ import Navigation from "./Navigation.tsx";
 
 const Header = () => {
     return (
-        <header className="rounded-t-3xl bg-grey">
+        <header className="rounded-t-3xl bg-gray">
             <Navigation/>
             <h1 className="text-center text-4xl py-4">Luke Skywalker</h1>
         </header>
