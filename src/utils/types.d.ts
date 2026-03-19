@@ -1,6 +1,8 @@
 export interface SWContextValue {
     hero: string;
     changeHero: (hero: string) => void;
+    valid: boolean;
+    changeValid : (valid: boolean) => void;
 }
 
 export interface Hero {

@@ -1,6 +1,7 @@
 import {useContext} from "react";
 import {SWContext} from "../utils/context.ts";
 import {NavLink} from "react-router";
+import {navItems} from "../utils/constants.ts";
 
 interface Props {
     friend: string;
@@ -20,7 +21,7 @@ const Friend = ({friend, pos, alt, change}: Props) => {
         styles += " rounded-bl-3xl";
     }
     return (
-        <NavLink to={`/home/${change}`}>
+        <NavLink to={`/${navItems[0]}/${change}`}>
             <img onClick={() => {
                 changeHero(change)
             }} className={styles} src={friend} alt={alt}/>
